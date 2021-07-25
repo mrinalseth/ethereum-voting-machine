@@ -15,7 +15,7 @@ const Index = () => {
       setElections(await factory.methods.getDeployedElection().call());
     }
     fetchData();
-  }, []);
+  }, [currAccount]);
 
   const renderElection = () => {
     const items = elections.map((address) => {
